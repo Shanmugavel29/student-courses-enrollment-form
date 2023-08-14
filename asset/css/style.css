@@ -1,0 +1,39 @@
+.bg-container {
+    background-color: #ba4efc;
+    background-size: cover;
+}
+.form-card {
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: left;
+    margin: 15px;
+    width: 550px;
+    height: 160px;
+    padding: 20px;
+}
+.list-element {
+    list-style-type: none;
+}
+.submit-button {
+    height: 36px;
+    width: 124px;
+    border-radius: 10px;
+    background-color: #9e03ff;
+    border-width: 0px; 
+    margin: 10px 50px 50px 50px;
+}
+.padding-elemnet {
+    margin: 20px; 
+}
+.google-form-heading {
+    font-size: 25px;
+    font-family: "Roboto";
+    font-weight: bold;   
+}
+#font-element-description {
+    font-weight: normal;
+}
+.required-element-color {
+    color: red;
+}

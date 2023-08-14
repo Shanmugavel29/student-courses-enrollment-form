@@ -1,1 +1,133 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "./assets/css/style.css"/>
+        <title>student courses enrollment Forms</title>
+        <meta charset = "UFT-8"/>
+        <meta name = "Authur" content = "Shanmugavel.RM">
+        <meta name = "Description" content = "Try to create the google form"/>
+        <meta name = "keyword" content = "student-courses-enrollment-form, courses-enrollment-form, courses-enrollment, enrollment, form, cources, student-education-form"/>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class = "bg-container">
+                <form class = "d-flex flex-row justify-content-center">
+                    <div>
+                        <ul class = "list-element">
+                            <li class = "form-card" id = "font-element-description">
+                                <div>
+                                    <h4 class = "google-form-heading">Student Courses Enrollment Form</h4>
+                                    <p>This google form is created for students to enroll the courses.</p>
+                                    <h6 class = "required-element-color">Required *</h6>
+                                </div>
+                            </li>
+                            <li class = "form-card">
+                                <label for = "first-name">
+                                    First Name:
+                                </label>
+                                <br/>
+                                <input type = "textbox" placeholder = "Enter first name:" id="first-name" class = "padding-elemnet" required="*"/>
+                            </li>
+                            <li class = "form-card">
+                                <label for = "second-name">
+                                    Second Name:
+                                </label>
+                                <br/>
+                                <input type = "textbox" placeholder = "Enter second name:" id = "second-name" class = "padding-elemnet" required/>
+                            </li>
+                            <li class = "form-card">
+                                <label for = "register-no">
+                                    Register Number:
+                                </label>
+                                <br/>
+                                <input type = "textbox" placeholder = "Enter register number" id = "register-no" name = "register-no" class = "padding-elemnet" required/>
+                            </li>
+                            <li class = "form-card">
+                                <label for = "mobile-number">
+                                    Mobile Number:
+                                </label>
+                                <br/>
+                                <input type = "tel" placeholder = "Enter mobile number" id = "mobile-number" name = "mobile-number" class = "padding-elemnet"  pattern="[9-6]{1}-[0-9]{9}" required/>
+                                <small>Format: 9876543210</small>
+                            </li>
+                            <li class = "form-card">
+                                <label for = "e-mail">
+                                    E-mail:
+                                </label>
+                                <br/>
+                                <input type = "email" placeholder = "Enter email" id = "e-mail" name = "e-mail" class = "padding-elemnet" pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" title = "Enter the vaild e-mail id" required/>
+                                <input type = "submit"/>
+                            </li>
+                            <li class = "form-card">
+                                <label for = "department">
+                                    Department:
+                                </label>
+                                <br/>
+                                <select class = "option" class = "padding-elemnet">
+                                    <option value = "CSE">CSE</option>
+                                    <option value = "IT">IT</option>
+                                    <option value = "AIDS">AIDS</option>
+                                    <option value = "AIML">AIML</option>
+                                    <option value = "IOT">IOT</option>
+                                    <option value = "ECE">ECE</option>
+                                    <option value = "EEE">EEE</option>
+                                    <option value = "CSE(CS)">CSE(CS)</option>
+                                </select>
+                            </li>
+                            <li class = "form-card">
+                                <label for = "gender">
+                                    Gender:
+                                </label>
+                                <br/>
+                                <input type = "radio" id = "gender" name = "gender" value = "male" class = "padding-elemnet"/>Male
+                                <input type = "radio" id = "gender" name = "gender" value = "female" class = "padding-elemnet"/>female
+                                <input type = "radio" id = "gender" name = "gender" value = "other" class = "padding-elemnet"/>Other
+                            </li>
+                            <li class = "form-card">
+                                <label for = "language">
+                                    Language:
+                                </label>
+                                <br/>
+                                <input type = "checkbox" id="language" name = "language" value = "C" class = "padding-elemnet"/>C
+                                <input type = "checkbox" id="language" name = "language" value = "C++" class = "padding-elemnet"/>C++
+                                <input type = "checkbox" id="language" name = "language" value = "Python" class = "padding-elemnet"/>Python
+                                <input type = "checkbox" id="language" name = "language" value = "Java" class = "padding-elemnet"/>Java
+                            </li>
+                            <li class = "form-card">
+                                <label for = "year">
+                                    Year:
+                                </label>
+                                <br/>
+                                <input type = "radio" id = "year" name = "year" value = "I" class = "padding-elemnet"/>I
+                                <input type = "radio" id = "year" name = "year" value = "II" class = "padding-elemnet"/>II
+                                <input type = "radio" id = "year" name = "year" value = "III" class = "padding-elemnet"/>III
+                                <input type = "radio" id = "year" name = "year" value = "IV" class = "padding-elemnet"/>IV
+                            </li>
+                            <li class = "form-card">
+                                <label for = "slot">
+                                    Slot:
+                                </label>
+                                <br/>
+                                <input type = "radio" id = "slot" name = "slot" value ="10 AM" class = "padding-elemnet"/>10 AM 
+                                <input type = "radio" id = "slot" name = "slot" value ="2 PM" class = "padding-elemnet"/>2 PM 
+                                <input type = "radio" id = "slot" name = "slot" value ="5 PM" class = "padding-elemnet"/>5 PM 
+                            </li>
+                            <li class = "form-card">
+                                <label for = "resume">
+                                    Resume(PDF):
+                                </label>
+                                <br/>
+                                <input type = "file" placeholder = "Upload pdf" id = "resume" name = "resume" class = "padding-elemnet"/>
+                            </li>
+                        </ul>
+                        <button class = "submit-button">Submit</button>
+                    </div>    
+                </form>
+        </div>
+    </body>
+</html>
